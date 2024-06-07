@@ -36,7 +36,7 @@ const App = () => {
     const formData = new FormData();
     formData.append('file', file);
     try {
-      const res = await axios.post('rhphost.ddns.net/upload', formData, {
+      const res = await axios.post('https://rhpservidor.onrender.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -52,7 +52,7 @@ const App = () => {
   const submitValores = async (event) => {
     event.preventDefault();
     try {
-      const res = await axios.post('rhphost.ddns.net/copiaTabela', {
+      const res = await axios.post('https://rhpservidor.onrender.com/copiaTabela', {
         valor1: valor1,
         valor2: valor2
       });
