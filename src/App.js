@@ -83,7 +83,7 @@ const App = () => {
         </div>
         <div className="form-wrapper">
           <form onSubmit={submitValores} className='form'>
-            <h3>Inserção por clonagemmmm de tabela:</h3>
+            <h3>Inserção por clonagem de tabela:</h3>
             <input type="text" name="valor1" value={valor1} onChange={e => setValor1(e.target.value)} placeholder="cd_tab_fat - receberá os dados " />
             <input type="text" name="valor2" value={valor2} onChange={e => setValor2(e.target.value)} placeholder="cd_tab_fat - será clonada" />
             <button type="submit" className="button">Enviar Dados</button>
